@@ -1,22 +1,31 @@
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from "react-responsive-carousel";
+// import React from "react";
+// import Slider from "react-slick";
+import React, { Component } from "react";
+import Slider from "react-slick";
+import { Container, Wrapper } from "./style";
 
-const DemoCarousel = () => {
-  return (
-    <Carousel>
-      <div style={{ height: 100, background: "#f00" }}>
-        {/* <img src="assets/1.jpeg" /> */}
-        <p className="legend">Legend 1</p>
-      </div>
-      <div style={{ height: 100, background: "#f00" }}>
-        {/* <img src="assets/2.jpeg" /> */}
-        <p className="legend">Legend 2</p>
-      </div>
-      <div style={{ height: 100, background: "#f00" }}>
-        {/* <img src="assets/3.jpeg" /> */}
-        <p className="legend">Legend 3</p>
-      </div>
-    </Carousel>
-  );
-};
-export default DemoCarousel;
+export default class CenterMode extends Component {
+  render() {
+    const settings = {
+      className: "center",
+      centerMode: true,
+      infinite: true,
+      centerPadding: "60px",
+      slidesToShow: 3,
+      speed: 500,
+    };
+    return (
+      <Container>
+        <h2>Center Mode</h2>
+        <Slider {...settings}>
+          <Wrapper>1</Wrapper>
+          <Wrapper>2</Wrapper>
+          <Wrapper>3</Wrapper>
+          <Wrapper>4</Wrapper>
+          <Wrapper>5</Wrapper>
+          <Wrapper>6</Wrapper>
+        </Slider>
+      </Container>
+    );
+  }
+}
