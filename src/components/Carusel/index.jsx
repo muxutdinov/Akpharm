@@ -6,6 +6,7 @@ import { Container, Wrapper } from "./style";
 
 export default class CenterMode extends Component {
   render() {
+      
     const settings = {
       className: "center",
       centerMode: true,
