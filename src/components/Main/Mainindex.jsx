@@ -3,6 +3,7 @@ import { AllWrapper, Container } from "./MainStyle";
 import Navbar from "./Navbar/index";
 import Body from "./Body";
 import Bodycard from "../Body-card";
+import DemoCarousel from "../Carusel";
 
 export const Mainindex = () => {
   return (
@@ -13,6 +14,7 @@ export const Mainindex = () => {
           <Body />
         </Container>
         <Bodycard />
+      <DemoCarousel />
       </AllWrapper>
     </>
   );
