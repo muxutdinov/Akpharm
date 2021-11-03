@@ -2,7 +2,7 @@ import styled from "styled-components";
 import main from "../../assets/imges/main.png";
 
 export const AllWrapper = styled.div`
-  width: 1360px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   background: #e5e5e5;

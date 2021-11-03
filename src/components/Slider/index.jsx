@@ -1,4 +1,5 @@
 import React from "react";
+import { Img } from "./Slider";
 import "./style.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -12,26 +13,51 @@ const CenterMode = () => {
     className: "center",
     centerMode: true,
     infinite: true,
-    centerPadding: "60px",
+    centerPadding: "0px",
     slidesToShow: 3,
     speed: 500,
+    autoplay: true,
   };
   return (
     <>
-      <div>
-        <h2 className="maxsulotlar">Akpharmdagi maxsulotlar karalogi</h2>
-        <Slider {...settings} className="Container" autoplay>
-          <div className="itemSlider">
-            <img src={img1} height="100%" width="100%" />
+      <div style={{ width: "100%", padding: 20 }}>
+        <h2 className="maxsulotlar">Akpharmdagi maxsulotlar katalogi</h2>
+        <Slider {...settings} className="Container">
+          <div className="itemSliderTArget">
+            <div className="itemSlider">
+              <Img src={img1} />
+              <div className="imgtext">Tibbiy asbob-uskunalar</div>
+            </div>
           </div>
-          <div className="itemSlider">
-            <img src={img2} height="100%" width="100%" />
+          <div className="itemSliderTArget">
+            <div className="itemSlider">
+              <Img src={img2} />
+              <div className="imgtext">Tibbiy asbob-uskunalar</div>
+            </div>
           </div>
-          <div className="itemSlider">
-            <img src={img1} height="100%" width="100%" />
+          <div className="itemSliderTArget">
+            <div className="itemSlider">
+              <Img src={img3} />
+              <div className="imgtext">Tibbiy asbob-uskunalar</div>
+            </div>
           </div>
-          <div className="itemSlider">
-            <img src={img3} height="100%" width="100%" />
+          <div className="itemSliderTArget">
+            <div className="itemSlider">
+              <Img src={img1} />
+              <div className="imgtext">Tibbiy asbob-uskunalar</div>
+            </div>
+          </div>
+          <div className="itemSliderTArget">
+            <div className="itemSlider">
+              <Img src={img2} />
+              <div className="imgtext">Tibbiy asbob-uskunalar</div>
+            </div>
+          </div>
+          <div className="itemSliderTArget">
+            <div className="itemSlider">
+              <Img src={img1} />
+              <div className="imgtext">Tibbiy asbob-uskunalar</div>
+            </div>
           </div>
         </Slider>
       </div>
