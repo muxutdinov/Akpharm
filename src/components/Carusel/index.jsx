@@ -1,32 +1,42 @@
-// import React from "react";
-// import Slider from "react-slick";
-import React, { Component } from "react";
+import React from "react";
+import img1 from "../../assets/imges/main.png";
+import img2 from "../../assets/imges/student.png";
+import img3 from "../../assets/imges/team.png";
+import { Wrapper, Container, AllWrapper } from "./style";
 import Slider from "react-slick";
-import { Container, Wrapper } from "./style";
-
-export default class CenterMode extends Component {
-  render() {
-      
-    const settings = {
-      className: "center",
-      centerMode: true,
-      infinite: true,
-      centerPadding: "60px",
-      slidesToShow: 3,
-      speed: 500,
-    };
-    return (
-      <Container>
-        <h2>Center Mode</h2>
-        <Slider {...settings}>
-          <Wrapper>1</Wrapper>
-          <Wrapper>2</Wrapper>
-          <Wrapper>3</Wrapper>
-          <Wrapper>4</Wrapper>
-          <Wrapper>5</Wrapper>
-          <Wrapper>6</Wrapper>
+const Carusel = () => {
+  var settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
+  return (
+    <>
+      <div className="Container">
+        <Slider {...settings} autoplay>
+          <div className="slideItem">
+            <img src={img1} height="200px" width="300px" />
+          </div>
+          <div className="slideItem">
+            <img src={img2} height="200px" width="300px" />
+          </div>
+          <div className="slideItem">
+            <img src={img3} height="200px" width="300px" />
+          </div>
         </Slider>
-      </Container>
-    );
-  }
-}
+      </div>
+      <style jsx={true}>{`
+        .slideItem {
+          display: inline-flex !important;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+        }
+      `}</style>
+    </>
+  );
+};
+
+export default Carusel;

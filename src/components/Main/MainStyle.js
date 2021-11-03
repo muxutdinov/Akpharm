@@ -21,3 +21,11 @@ export const Container = styled.div`
   background-size: cover;
   background-repeat: no-repeat;
 `;
+export const DemoWrapper = styled.div`
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* height: 500px;
+  width: 500px;
+  background-color: yellow; */
+`;
