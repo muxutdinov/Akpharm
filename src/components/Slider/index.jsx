@@ -20,7 +20,7 @@ const CenterMode = () => {
   };
   return (
     <>
-      <div style={{ width: "100%", padding: 20 }}>
+      <div style={{ width: "100%", padding: "20px"}} className="Perent">
         <h2 className="maxsulotlar">Akpharmdagi maxsulotlar katalogi</h2>
         <Slider {...settings} className="Container">
           <div className="itemSliderTArget">

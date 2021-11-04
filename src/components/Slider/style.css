@@ -58,13 +58,14 @@
   color: black !important;
   font-size: 25px !important;
 }
-.slick-prev:before,
-.slick-next:before::hover {
-  background-color: red !important;
+.slick-prev:hover:before,
+.slick-next:hover:before {
+  color: gold !important;
 }
 .slick-list {
   padding: 0 !important;
 }
+
 .imgtext {
   font-weight: bold;
   display: flex;
@@ -76,4 +77,9 @@
   height: 40px;
   width: 200px;
   background: white;
+}
+.Perent {
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 50px;
 }
