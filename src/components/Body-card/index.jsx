@@ -1,6 +1,7 @@
 import React from "react";
 import team from "../../assets/imges/team.png";
 import student from "../../assets/imges/student.png";
+
 import {
   Containers,
   Imgfirst,
@@ -16,8 +17,10 @@ import {
   MiniText,
   Border,
 } from "./style";
+import { useTranslation } from "react-i18next";
 
 const Bodycard = () => {
+  const { t } = useTranslation();
   return (
     <Containers>
       <Wrapperone>
@@ -26,7 +29,7 @@ const Bodycard = () => {
       </Wrapperone>
       <Wrappertwo>
         <MiniCon>
-          <Title>Biz haqimizda</Title>
+          <Title>{t("home.about")}</Title>
         </MiniCon>
         <MiniCon>
           <Text>
@@ -40,12 +43,12 @@ const Bodycard = () => {
         </MiniCon>
         <MiniCon>
           <Statistics>
-            <MiniTitle >
+            <MiniTitle>
               <Number>340</Number>
               <MiniText>Xodimlar</MiniText>
             </MiniTitle>
             <Border />
-            <MiniTitle >
+            <MiniTitle>
               <Number>180</Number>
               <MiniText>Taminotchilar</MiniText>
             </MiniTitle>
