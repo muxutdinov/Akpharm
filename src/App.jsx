@@ -8,7 +8,7 @@ const App = () => {
   const history = createBrowserHistory();
   return (
     <>
-      <Router>
+      <Router history={history}>
         <Routers />
       </Router>
     </>
